@@ -299,3 +299,110 @@ footer{
     background: #131921;
     padding: 20px 60px;
 }
+
+/* code for web responsive */
+/* 
+@media only screen and (max-width: 1550px){
+    .nav-bottom h4{
+        display: none;
+    }
+} */
+
+@media only screen and (max-width: 1000px){
+    nav{
+        flex-wrap: wrap;
+    }
+    .nav-search{
+        order:7;
+        margin: 15px 0 5px;
+        min-width: 300px;
+    }
+     .box-col{
+      max-width: 48%;
+    }
+    .frame{
+        max-width: 100;
+        width: 100%;
+        align-items: center;
+    }
+    .action p{
+        margin-left: 38%;
+    }
+    .action button{
+        margin-left: 35%;
+    }
+    .action .link{
+         margin-left: 35%;
+    }
+    .text-row-container{
+        gap: 80px;
+    }
+    .lang-container{
+        display: none;
+    }
+    
+        
+}
+@media only screen and (max-width: 670px){
+    .nav-country, .nav-language, .nav-text{
+        display: none;
+    }
+    .nav-bottom{
+        /* font-size: 13px;
+        gap: 10px; */
+        overflow-x: scroll;
+    }
+    .nav-bottom::-webkit-scrollbar{
+        display: none;
+    }
+    .nav-bottom p{
+        text-wrap: nowrap;
+    }
+    .nav-search{
+        min-width: 500px;
+    }
+    .user-icon{
+        display: flex !important;
+        flex: 1;
+        justify-content: flex-end;
+    }
+    .user-icon img{
+        width: 25px;
+    }
+    .nav-cart h4{
+        display: none;
+    }
+    .nav-cart{
+        width: 25px;
+    }
+    .header-slider a{
+        top: 24%;
+        padding: 2vh 1vw;
+        font-size: 15px;
+    }
+    .box-col{
+        max-width: 100%;
+        width: 100%;
+    }
+    footer{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    }
+}
+@media only screen and (max-width: 900px){
+ .text-row-container{
+        gap: 30px;
+    }
+}
+@media only screen and (max-width: 780px){
+ .text-row-container{
+        gap: 20px;
+    }
+}
+@media only screen and (max-width: 730px){
+ .text-row-container{
+        display: none;
+    }
+}
