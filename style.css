@@ -299,6 +299,56 @@ footer{
     background: #131921;
     padding: 20px 60px;
 }
+.lang-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* space between boxes */
+  margin: 20px auto;
+  flex-wrap: wrap; /* makes it responsive */
+}
+
+/* Each language / currency / country box */
+.ftr-lang {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 8px 14px;
+  min-width: 140px;
+  justify-content: center;
+  background-color: #131a22; /* darker inner box */
+}
+
+/* Icons and flag images */
+.ftr-lang img {
+  width: 25px;
+  height: auto;
+  border-radius: 3px;
+}
+
+/* Headings and paragraph text */
+.ftr-lang h4,
+.ftr-lang p {
+  margin: 0;
+  font-size: 14px;
+  color: #ddd;
+  font-weight: normal;
+}
+
+/* Language title a bit bolder */
+.ftr-lang h4 {
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Bottom copyright text */
+.product-footer p {
+  color: #aaa;
+  font-size: 13px;
+  margin-top: 10px;
+}
 
 /* code for web responsive */
 /* 
@@ -405,4 +455,19 @@ footer{
  .text-row-container{
         display: none;
     }
+}
+@media only screen and (max-width: 490px){
+    .nav-search{
+        min-width: 300px;
+    }
+
+}
+@media (max-width: 400px) {
+  .lang-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .ftr-lang {
+    width: 80%;
+  }
 }
